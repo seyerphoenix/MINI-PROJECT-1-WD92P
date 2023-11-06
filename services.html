@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+
+    <style>
+
+body{
+    overflow:auto;
+}
+
+#lenovo{
+    height:65px;
+    width: 150px;
+}
+
+#amd, #nvidia, #hp{
+    height: 80px;
+    width: 160px;
+}
+
+#asus{
+    height: 65px;
+    width: 150px;
+}
+
+#microsoft{
+    height: 70px;
+    width: 180px;
+}
+
+#acer{
+    height: 100px;
+    width: 170px;
+}
+
+#giga{
+    height: 70px;
+    width: 120px;
+}
+
+#dell{
+    height: 80px;
+    width: 80px;
+}
+.quotes{
+    color:rgb(243, 229, 229);
+    font-size: larger;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+
+  .two, .three, .four, .five, .six, .seven, .eight, .nine{
+        object-fit: fill;
+        padding: 10px;
+        height: 300px;
+        width: 450px;
+        float: inline-end;
+        box-shadow: 0 0 5px 3px;
+        margin: 15px;
+        position:relative;
+    }
+    
+    .hardware{
+        position: absolute;
+        left: 590px;
+        top: 530px;
+        font-size:x-large;
+        font-weight: 600;
+        color: white ;
+        background-color:rgb(52, 138, 218);
+        border-radius: 6px;
+        padding:10px;
+        text-decoration: none;
+    }
+
+    .virus{
+        position: absolute;
+        right: 460px;
+        top: 530px;
+        font-size:x-large;
+        font-weight: 600;
+        color: white ;
+        background-color:rgb(52, 138, 218);
+        padding:10px;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+
+    .software{
+        position: absolute;
+        left: 590px;
+        top: 860px;
+        font-size:x-large;
+        font-weight: 600;
+        color: white ;
+        background-color:rgb(52, 138, 218);
+        border-radius: 6px;
+        text-decoration: none;
+        padding:10px;
+    }
+
+    .data{
+        position: absolute;
+        right: 380px;
+        top:860px;
+        font-size:x-large;
+        font-weight: 600;
+        color: white ;
+        background-color:rgb(52, 138, 218);
+        padding:10px;
+        border-radius: 6px;
+        text-decoration: none
+    }
+
+    .maintenance{
+        position: absolute;
+        left: 570px;
+        top: 1150px;
+        font-size:x-large;
+        font-weight: 600;
+        color: white ;
+        background-color:rgb(52, 138, 218);
+        padding:10px;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+
+    .custom{
+        position: absolute;
+        right: 410px;
+        top: 1180px;
+        font-size:x-large;
+        font-weight: 600;
+        color: white ;
+        background-color:rgb(52, 138, 218);
+        padding:10px;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+
+    .remote{
+        position: absolute;
+        left: 590px;
+        top: 1520px;
+        font-size:x-large;
+        font-weight: 600;
+        color: white ;
+        background-color:rgb(52, 138, 218);
+        padding:10px;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+
+    .accs{
+        position: absolute;
+        right: 390px;
+        top: 1520px;
+        font-size:x-large;
+        font-weight: 600;
+        color: white ;
+        background-color:rgb(52, 138, 218);
+        padding:10px;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+
+    .hardware:hover, 
+    .virus:hover,
+    .software:hover,
+    .data:hover,
+    .maintenance:hover,
+    .custom:hover,
+    .remote:hover,
+    .accs:hover
+    
+    {
+        background-color: gray;
+        color: white;
+
+    }
+
+h2{
+text-align: left;
+padding-left: 20px;
+padding-top: 20px;
+}
+
+p{
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hardware00, .software00, .virus00, .maintenance00, .custom00,  .remote00,  .data00, .accs00{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+color: white;
+width: 70%;
+justify-content: center;
+margin: auto;
+padding: 35px;
+margin-top: 20px;
+margin-bottom: 20px;
+border-radius: 5px 50px 5px 50px;
+}
+
+
+#privacy, #sitemap, #terms, #rights, #cookies{
+    text-decoration: none;
+    color: white;
+    font-size:small;
+}
+
+#flag{
+    height: 20px;
+    width: 20px;
+    font-size: small;
+}
+
+#fb, #ig, #yt{
+height: 35px;
+width: 35px;
+border-radius:50%;
+border: solid 3px white;
+}
+
+.btn{
+    width: 100px;
+    color: white;
+    font-weight:400;
+}
+
+#get-in{
+    text-align: center;
+}
+
+#services{
+    height:50px;
+    width: 100%;
+    color: white;
+    background-color: rgb(38, 38, 245);
+    text-align: center;
+}
+
+#servicestxt{
+    word-spacing:3px;
+}
+
+
+
+    /*5
+.two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover, .nine:hover{
+
+    border: solid 4px black;
+} */
+ 
+
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row bg-secondary position-sticky top-0" id="upper">
+            <div class="col"></div>
+                 <div class="col d-flex py-4"><img src="lenovo.jfif" id="lenovo"></div>
+                 <div class="col py-3"><img src="amd.gif" alt="amd" id="amd"></div>
+                 <div class="col py-4 px-1"><img src="asus.png" alt="asus" id="asus"></div>
+                 <div class="col py-4 px-2"><img src="microsoft.gif" alt="microsoft" id="microsoft"></div>
+                 <div class="col py-2 px-2"><img src="acer.png" alt="acer" id="acer"></div>
+                 <div class="col py-3 px-3"><img src="nvidia.gif" alt="nvidia" id="nvidia"></div>
+                 <div class="col py-4 px-1"><img src="giga.png" alt="giga" id="giga"></div>
+                 <div class="col p-3"><img src="hp.gif" alt="hp" id="hp"></div>
+                 <div class="col p-3"><img src="dell.png" alt="dell" id="dell"></div>
+            <div class="col"></div>
+
+            <div class="quotes">
+              <p>"Embrace the Future: Repair, Reboot, Rejoice."</p>
+            </div>
+        </div>
+  </div>
+
+  <div class="border-services "id="services">
+  <marquee behavior="alternate" width="400px" text-center> <h1 id="servicestxt">SERVICES</h1></marquee>
+    </div><br><br>
+
+        
+    <div class="container">
+        <div class="row">
+
+            <div class="col"><img src="2.jpeg" class="two">
+                <a href="#hardware" class="hardware">Hardware Services</a>
+            </div>
+
+            <div class="col"><img src="3.png" class="three">
+                <a href="#virus" class="virus">Virus Removal</a>
+            </div>
+
+            <div class="col"><img src="4.jpg" class="four">
+                <a href="#software" class="software">Software Services</a>
+            </div>
+
+            <div class="col"><img src="5.jpg" class="five">
+                <a href="#data" class="data">DATA RECOVERY and BACK UP</a>
+            </div>
+
+            <div class="col"><img src="6.jpg" class="six">
+                <a href="#maintenance" class="maintenance">Computer Maintenance 
+                <br>&emsp14;
+                and Upgrade Services</a>
+
+            </div>
+
+            <div class="col"><img src="7.jpg" class="seven">
+                <a href="#custom" class="custom">Computer Customization</a>
+            </div>
+
+            <div class="col"><img src="10.jpg" class="eight">
+                <a href="#remote" class="remote" >Remote IT Support</a>
+            </div>
+
+            <div class="col"><img src="9.jpg" class="nine">
+                <a href="#accs" class="accs">Computer Accessories Repair</a>
+            </div>
+        </div>
+    </div>
+
+<div class="hardware00 ">
+<h2 id="hardware">HARDWARE</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsa exercitationem eaque laboriosam, possimus rerum nesciunt suscipit quaerat neque sapiente error tenetur odit. Voluptatibus, repellendus? Fugit quibusdam nesciunt corrupti laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vero expedita modi, blanditiis unde voluptate cum recusandae sed distinctio error ullam deleniti praesentium veniam molestiae, voluptatum odit fuga. Ipsam, minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellendus vel fugit nihil voluptas assumenda dolores voluptatem voluptate, ad in sapiente nobis maiores recusandae alias? Est ipsum laborum numquamLorem ipsum, dolor sit amet consectetur adipisicing elit. Odio explicabo vitae consequatur error. Ratione earum suscipit sunt. Quae praesentium quos mollitia! Officiis, quos alias? Eos laborum ducimus corporis animi Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet impedit nam, explicabo porro perspiciatis. Non ullam omnis, optio voluptatibus voluptas incidunt, odit accusamus vitae totam iste, architecto assumenda Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, esse, provident nemo saepe labore alias quas ullam necessitatibus doloribus quidem cum iste officia, voluptate iusto ex maiores consequuntur voluptatum sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit maiores laboriosam aliquam tempore cumque magni aspernatur labore, illum corporis veritatis voluptates provident accusantium, iusto sunt non voluptatem, similique reiciendis culpa.
+    </p>
+</div> 
+
+<div class="virus00">
+<h2 id="virus">VIRUS REMOVAL</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsa exercitationem eaque laboriosam, possimus rerum nesciunt suscipit quaerat neque sapiente error tenetur odit. Voluptatibus, repellendus? Fugit quibusdam nesciunt corrupti laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vero expedita modi, blanditiis unde voluptate cum recusandae sed distinctio error ullam deleniti praesentium veniam molestiae, voluptatum odit fuga. Ipsam, minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellendus vel fugit nihil voluptas assumenda dolores voluptatem voluptate, ad in sapiente nobis maiores recusandae alias? Est ipsum laborum numquamLorem ipsum, dolor sit amet consectetur adipisicing elit. Odio explicabo vitae consequatur error. Ratione earum suscipit sunt. Quae praesentium quos mollitia! Officiis, quos alias? Eos laborum ducimus corporis animi Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet impedit nam, explicabo porro perspiciatis. Non ullam omnis, optio voluptatibus voluptas incidunt, odit accusamus vitae totam iste, architecto assumenda Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, esse, provident nemo saepe labore alias quas ullam necessitatibus doloribus quidem cum iste officia, voluptate iusto ex maiores consequuntur voluptatum sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit maiores laboriosam aliquam tempore cumque magni aspernatur labore, illum corporis veritatis voluptates provident accusantium, iusto sunt non voluptatem, similique reiciendis culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium obcaecati impedit quas praesentium, totam velit sunt aliquid nihil laboriosam? Ex odit placeat provident ratione neque accusamus, porro eius quis deserunt.
+    </p>
+</div> 
+
+<div class="software00">
+<h2 id="software">SOFWARE SERVICES</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsa exercitationem eaque laboriosam, possimus rerum nesciunt suscipit quaerat neque sapiente error tenetur odit. Voluptatibus, repellendus? Fugit quibusdam nesciunt corrupti laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vero expedita modi, blanditiis unde voluptate cum recusandae sed distinctio error ullam deleniti praesentium veniam molestiae, voluptatum odit fuga. Ipsam, minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellendus vel fugit nihil voluptas assumenda dolores voluptatem voluptate, ad in sapiente nobis maiores recusandae alias? Est ipsum laborum numquamLorem ipsum, dolor sit amet consectetur adipisicing elit. Odio explicabo vitae consequatur error. Ratione earum suscipit sunt. Quae praesentium quos mollitia! Officiis, quos alias? Eos laborum ducimus corporis animi Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet impedit nam, explicabo porro perspiciatis. Non ullam omnis, optio voluptatibus voluptas incidunt, odit accusamus vitae totam iste, architecto assumenda Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, esse, provident nemo saepe labore alias quas ullam necessitatibus doloribus quidem cum iste officia, voluptate iusto ex maiores consequuntur voluptatum sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit maiores laboriosam aliquam tempore cumque magni aspernatur labore, illum corporis veritatis voluptates provident accusantium, iusto sunt non voluptatem, similique reiciendis culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magnam eius, placeat nihil odio quisquam officia incidunt tenetur doloremque perspiciatis eum recusandae ad quo quibusdam impedit, quidem consectetur et autem.
+    </p>
+</div> 
+
+<div class="data00">
+<h2 id="data">DATA RECOVERY AND BACKUP</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsa exercitationem eaque laboriosam, possimus rerum nesciunt suscipit quaerat neque sapiente error tenetur odit. Voluptatibus, repellendus? Fugit quibusdam nesciunt corrupti laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vero expedita modi, blanditiis unde voluptate cum recusandae sed distinctio error ullam deleniti praesentium veniam molestiae, voluptatum odit fuga. Ipsam, minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellendus vel fugit nihil voluptas assumenda dolores voluptatem voluptate, ad in sapiente nobis maiores recusandae alias? Est ipsum laborum numquamLorem ipsum, dolor sit amet consectetur adipisicing elit. Odio explicabo vitae consequatur error. Ratione earum suscipit sunt. Quae praesentium quos mollitia! Officiis, quos alias? Eos laborum ducimus corporis animi Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet impedit nam, explicabo porro perspiciatis. Non ullam omnis, optio voluptatibus voluptas incidunt, odit accusamus vitae totam iste, architecto assumenda Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, esse, provident nemo saepe labore alias quas ullam necessitatibus doloribus quidem cum iste officia, voluptate iusto ex maiores consequuntur voluptatum sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit maiores laboriosam aliquam tempore cumque magni aspernatur labore, illum corporis veritatis voluptates provident accusantium, iusto sunt non voluptatem, similique reiciendis culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequuntur, laboriosam, sapiente qui quaerat ut ipsum assumenda ad eos consectetur ea corrupti, voluptates cupiditate veritatis hic aperiam quas perspiciatis necessitatibus.
+    </p>
+</div> 
+
+<div class="maintenance00">
+<h2 id="maintenance">COMPUTER MAINTENANCE AND UPGRADE SERVICES</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsa exercitationem eaque laboriosam, possimus rerum nesciunt suscipit quaerat neque sapiente error tenetur odit. Voluptatibus, repellendus? Fugit quibusdam nesciunt corrupti laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vero expedita modi, blanditiis unde voluptate cum recusandae sed distinctio error ullam deleniti praesentium veniam molestiae, voluptatum odit fuga. Ipsam, minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellendus vel fugit nihil voluptas assumenda dolores voluptatem voluptate, ad in sapiente nobis maiores recusandae alias? Est ipsum laborum numquamLorem ipsum, dolor sit amet consectetur adipisicing elit. Odio explicabo vitae consequatur error. Ratione earum suscipit sunt. Quae praesentium quos mollitia! Officiis, quos alias? Eos laborum ducimus corporis animi Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet impedit nam, explicabo porro perspiciatis. Non ullam omnis, optio voluptatibus voluptas incidunt, odit accusamus vitae totam iste, architecto assumenda Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, esse, provident nemo saepe labore alias quas ullam necessitatibus doloribus quidem cum iste officia, voluptate iusto ex maiores consequuntur voluptatum sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit maiores laboriosam aliquam tempore cumque magni aspernatur labore, illum corporis veritatis voluptates provident accusantium, iusto sunt non voluptatem, similique reiciendis culpa.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus nulla enim consequuntur neque similique rerum culpa possimus voluptas, magnam, sit nemo tenetur debitis odit soluta reiciendis voluptate quam nihil hic?
+    </p>
+</div> 
+
+<div class="custom00">
+<h2 id="custom">COMPUTER CUSTOMIZATION</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsa exercitationem eaque laboriosam, possimus rerum nesciunt suscipit quaerat neque sapiente error tenetur odit. Voluptatibus, repellendus? Fugit quibusdam nesciunt corrupti laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vero expedita modi, blanditiis unde voluptate cum recusandae sed distinctio error ullam deleniti praesentium veniam molestiae, voluptatum odit fuga. Ipsam, minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellendus vel fugit nihil voluptas assumenda dolores voluptatem voluptate, ad in sapiente nobis maiores recusandae alias? Est ipsum laborum numquamLorem ipsum, dolor sit amet consectetur adipisicing elit. Odio explicabo vitae consequatur error. Ratione earum suscipit sunt. Quae praesentium quos mollitia! Officiis, quos alias? Eos laborum ducimus corporis animi Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet impedit nam, explicabo porro perspiciatis. Non ullam omnis, optio voluptatibus voluptas incidunt, odit accusamus vitae totam iste, architecto assumenda Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, esse, provident nemo saepe labore alias quas ullam necessitatibus doloribus quidem cum iste officia, voluptate iusto ex maiores consequuntur voluptatum sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit maiores laboriosam aliquam tempore cumque magni aspernatur labore, illum corporis veritatis voluptates provident accusantium, iusto sunt non voluptatem, similique reiciendis culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti inventore molestias dignissimos quidem ipsam, laborum quia, nesciunt modi provident praesentium odit voluptatem quod illum repudiandae soluta veritatis ipsum sint commodi!
+    </p>
+</div> 
+
+<div class="remote00">
+<h2 id="remote">REMOTE IT SUPPORT</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsa exercitationem eaque laboriosam, possimus rerum nesciunt suscipit quaerat neque sapiente error tenetur odit. Voluptatibus, repellendus? Fugit quibusdam nesciunt corrupti laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vero expedita modi, blanditiis unde voluptate cum recusandae sed distinctio error ullam deleniti praesentium veniam molestiae, voluptatum odit fuga. Ipsam, minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellendus vel fugit nihil voluptas assumenda dolores voluptatem voluptate, ad in sapiente nobis maiores recusandae alias? Est ipsum laborum numquamLorem ipsum, dolor sit amet consectetur adipisicing elit. Odio explicabo vitae consequatur error. Ratione earum suscipit sunt. Quae praesentium quos mollitia! Officiis, quos alias? Eos laborum ducimus corporis animi Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet impedit nam, explicabo porro perspiciatis. Non ullam omnis, optio voluptatibus voluptas incidunt, odit accusamus vitae totam iste, architecto assumenda Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, esse, provident nemo saepe labore alias quas ullam necessitatibus doloribus quidem cum iste officia, voluptate iusto ex maiores consequuntur voluptatum sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit maiores laboriosam aliquam tempore cumque magni aspernatur labore, illum corporis veritatis voluptates provident accusantium, iusto sunt non voluptatem, similique reiciendis culpa.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod facere dolore officiis sunt. Minus porro debitis aperiam molestias natus, pariatur voluptas tenetur? Nisi fugit totam rerum repellat perferendis, ea dicta.
+    </p>
+</div> 
+
+<div class="accs00">
+<h2 id="accs">COMPUTER ACCESSORIES REPAIR</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsa exercitationem eaque laboriosam, possimus rerum nesciunt suscipit quaerat neque sapiente error tenetur odit. Voluptatibus, repellendus? Fugit quibusdam nesciunt corrupti laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vero expedita modi, blanditiis unde voluptate cum recusandae sed distinctio error ullam deleniti praesentium veniam molestiae, voluptatum odit fuga. Ipsam, minima.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellendus vel fugit nihil voluptas assumenda dolores voluptatem voluptate, ad in sapiente nobis maiores recusandae alias? Est ipsum laborum numquamLorem ipsum, dolor sit amet consectetur adipisicing elit. Odio explicabo vitae consequatur error. Ratione earum suscipit sunt. Quae praesentium quos mollitia! Officiis, quos alias? Eos laborum ducimus corporis animi Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet impedit nam, explicabo porro perspiciatis. Non ullam omnis, optio voluptatibus voluptas incidunt, odit accusamus vitae totam iste, architecto assumenda Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, esse, provident nemo saepe labore alias quas ullam necessitatibus doloribus quidem cum iste officia, voluptate iusto ex maiores consequuntur voluptatum sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit maiores laboriosam aliquam tempore cumque magni aspernatur labore, illum corporis veritatis voluptates provident accusantium, iusto sunt non voluptatem, similique reiciendis culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officiis tempore sapiente ullam! Officia quos placeat facere accusamus deserunt minus, possimus reprehenderit dicta delectus magnam ex expedita, voluptatem temporibus culpa?
+    </p>
+</div> 
+
+<div class="back text-center">
+    <a href="#upper"><img src="top.png" alt="top" width="200px" height="100px"></a>.
+</div>
+
+<!--Footer start-->
+<div class="container-fluid">
+    <div class="footer">
+        <div class="row bg-dark text-white text-start py-3 px-3 ">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <p>Country/Region: Philippines<span>&emsp14;<img src="flag01.png" alt="flag" id="flag"></span></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2 bg-dark text-white p-3 m-0"></div>
+
+            <div class="col-2 bg-dark text-white p-3 m-0 border-top border-bottom">
+                <div class="list">
+                    <ul class="list-unstyled text-white">
+                        <li><h6 id="get-in">Get in touch</h6></li>
+                        <li>Don't miss updates and promos.</li>
+                    </ul>
+                </div>
+                    <form>
+                        <div class="sub">
+                          <input type="email" class="form-control pb-2 mb-2" id="exampleInputEmail1" placeholder="Enter email">
+                          <button type="submit" class="btn btn-danger py-2">Subscribe</button>
+                        </div>
+                    </form>
+                
+                
+            </div>
+        
+            <div class="col-2 bg-dark text-white p-3 m-0 border-top border-bottom">
+                <div class="list">
+                    <ul class="list-unstyled text-white">
+                        <li><h6>Support</h6></li>
+                        <li>Repair Status Check</li>
+                        <li>Drivers and Softwares</li>
+                        <li>Warranty Lookup</li>
+                        <li>Parts Lookup</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-2 bg-dark text-white p-3 m-0 border-top border-bottom">
+                <div class="list">
+                    <ul class="list-unstyled text-white">
+                        <li><h6>Resources</h6></li>
+                        <li>Glossary</li>
+                        <li>Blogs & Forums</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-2 bg-dark text-white p-3 m-0 border-top border-bottom">
+                        <h6>Follow us</h6>
+                <div class="list">
+                    <ul class="list-unstyled text-white d-flex">
+                        <li><img src="fb.png" alt="fb" id="fb"></li> &emsp;
+                        <li><img src="yt.png" alt="yt" id="yt"></li> &emsp;
+                        <li><img src="ig.jpg" alt="ig" id="ig"></li> &emsp;
+                        <li><img src="" alt="" id=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-2 bg-dark"></div>
+            <div class="row bg-dark text-white d-flex p-3 m-0">
+                <div class="col-2"></div>
+                    <div class="col-8">
+                        <ul class="list-unstyled d-flex text-white">
+                             <li><a href="#" id="privacy">Privacy Policy</a> &emsp14; I &emsp14;</li>
+                             <li><a href="#" id="terms">Terms of Use</a> &emsp14; I &emsp14; </li>
+                             <li><a href="#" id="sitemap">Sitemap</a> &emsp14; I &emsp14; </li>
+                             <li><a href="#" id="cookies">Cookie Settings</a> &emsp14; I &emsp; </li>
+                        </ul>
+                            <p>©2023 Dru Repair Center. All rights reserved. The information contained herein is subject to change without notice.</p>
+                   </div>
+                <div class="col-2"></div>
+            </div>
+        </div>       
+    </div>
+</div>
+
+
+
+</body>
+</html>
