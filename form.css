@@ -27,11 +27,10 @@ body{
     justify-content: center;
 }
 
-#logoname{
+h2{
     font-weight: bold;
-    text-shadow:3px 3px 3px black;
-
-}
+    text-shadow:3px 3px 3px blue;
+  }
 
 *{
     margin: 0;
