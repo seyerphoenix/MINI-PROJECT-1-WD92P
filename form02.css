@@ -14,7 +14,7 @@ body{
   border: 1px solid black;
   opacity: 0.8;
   border-radius: 15px;
-  height:800px;
+  height: 800px;
   width: 600px;
   padding: 30px;
 }
@@ -33,6 +33,56 @@ h2{
   text-align: center;
   margin: auto;
   justify-content: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+
+
+#lenovo{
+  height:65px;
+  width: 150px;
+}
+
+#amd, #nvidia, #hp{
+  height: 80px;
+  width: 160px;
+}
+
+#asus{
+  height: 65px;
+  width: 150px;
+}
+
+#microsoft{
+  height: 70px;
+  width: 180px;
+}
+
+#acer{
+  height: 100px;
+  width: 170px;
+}
+
+#giga{
+  height: 70px;
+  width: 120px;
+}
+
+#dell{
+  height: 80px;
+  width: 80px;
+}
+.quotes{
+  color:rgb(243, 229, 229);
+  font-size: larger;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
   
