@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+  background-color:white;
+}
+
+#lenovo{
+    height:65px;
+    width: 150px;
+}
+
+#amd, #nvidia, #hp{
+    height: 80px;
+    width: 160px;
+}
+
+#asus{
+    height: 65px;
+    width: 150px;
+}
+
+#microsoft{
+    height: 70px;
+    width: 180px;
+}
+
+#acer{
+    height: 100px;
+    width: 170px;
+}
+
+#giga{
+    height: 70px;
+    width: 120px;
+}
+
+#dell{
+    height: 80px;
+    width: 80px;
+}
+.quotes{
+    color:rgb(243, 229, 229);
+    font-size: larger;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.btn{
+    background-color: rgb(23, 172, 43);
+    width: 100px;
+    color: white;
+    font-weight:400;
+}
+
+.dropdown-item:hover{
+    background-color: gray;
+}
+
+#logoname{
+        font-weight: bold;
+        text-shadow:3px 3px 3px black;
+
+    }
+
+.d-block{
+    height: 600px;
+    width: 100%;
+}
+
+#one{
+    background: rgb(53,204,122);
+background: linear-gradient(90deg, rgba(53,204,122,1) 0%, rgba(32,126,12,1) 33%, rgba(0,127,14,1) 35%, rgba(129,166,158,1) 100%);
+
+margin-bottom: 20px;
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+justify-content: center;
+border-radius: 15px;
+box-shadow: 0 8px 5px gray;
+padding: 10px;
+}
+
+h1, h2, h3, h4{
+
+    text-align: center;
+}
+
+#trees01{
+position: relative;
+top: 150px;
+left: 160px;
+}
+
+#trees02{
+    position: relative;
+    top: 150px;
+
+}
+
+.footerdiv{
+    width: 60%;
+}
+
+footer{
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+.main{
+    display: flex;
+}
+h3, h5{
+    font-family: poppins;
+}
+
+.social{
+    margin:20px 0 0 0;
+}
+
+.social a{
+    padding:0 3px;
+}
+.fa-brands{
+    height: 40px;
+    width: 40px;
+background: 50px;
+    line-height: 1.6;
+    text-align:center;
+    justify-content: center;
+    font-size: 38px;
+    border-radius:3px;
+    transition: 0.3s;
+
+}
+
+.fa-brands:hover{
+    background: red;
+}
+
+
+.box .content {
+margin:20px 0 0 0;
+}
+
+
+</style>
+</head>
+<body>
+
+     <!--Upper Logos-->
+<div class="container-fluid">
+    <div class="row bg-secondary position-sticky top-0" >
+        <div class="col"></div>
+        <div class="col d-flex py-4"><img src="lenovo.jfif" id="lenovo"></div>
+        <div class="col py-3"><img src="amd.gif" alt="amd" id="amd"></div>
+        <div class="col py-4 px-1"><img src="asus.png" alt="asus" id="asus"></div>
+        <div class="col py-4 px-2"><img src="microsoft.gif" alt="microsoft" id="microsoft"></div>
+        <div class="col py-2 px-2"><img src="acer.png" alt="acer" id="acer"></div>
+        <div class="col py-3 px-3"><img src="nvidia.gif" alt="nvidia" id="nvidia"></div>
+        <div class="col py-4 px-1"><img src="giga.png" alt="giga" id="giga"></div>
+         <div class="col p-3"><img src="hp.gif" alt="hp" id="hp"></div>
+        <div class="col p-3"><img src="dell.png" alt="dell" id="dell"></div>
+        <div class="col"></div>
+        <div class="quotes"><p>"Embrace the Future: Repair, Reboot, Rejoice."</p></div>
+    </div>
+</div>
+    <!--End of upper Logo-->
+
+    
+
+<!--Navigation Bar-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary text-white text-center mx-auto ">
+    <div class="container-fluid bg-primary text-center">
+        <a href="#" class="navbar-logo"><img src="logo.png" height="50px" width="60px"></a>
+        <span><h2 id="logoname" class="my-auto pt-1">DRU REPAIR CENTER</h2></span>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav text-center ms-auto">
+                <a href="index.html" class="nav-item nav-link text-white border-2 border-end border-start px-3" id="home"><b>Home</b></a>
+                <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle text-white border-end px-3 border-2" data-bs-toggle="dropdown" id="repair"><b>Schedule Repair</b></a>
+                    <div class="dropdown-menu bg-primary">
+                      <a href="warranty.html" class="dropdown-item text-white px-3" id=warranty01>Under Warranty</a>
+                      <a href="bookuw.html" class="dropdown-item text-white px-3" id=warranty02>Out of Warranty</a>
+                    </div>
+               </div>
+                <a href="status.html" target="_blank"class="nav-item nav-link text-white border-end border-2" id="Track"><b>Track Repair Status</b></a>
+                <a href="services.html" target="_blank" class="nav-item nav-link text-white border-end border-2" id="services"><b>Services</b></a>
+                      </div>
+            <div class="navbar-nav ms-auto ">
+     
+            </div>
+        </div>
+    </div>
+</nav>
+<!--End Navigation Bar-->
+
+    <!--carousel-->
+    <div class="container-fluid">
+        <div class="row p-5">
+            
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+<div class="row justify-content mt-5">
+
+    <div class="col-3 ms-auto align-start" id="trees01">
+        <img src="trees.gif">
+    </div>
+
+    <div class="col-6 ">
+        <div id="readmore" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="savetheplanet01.jpg" class="d-block w-100" alt="futurepic">
+                <div class="carousel-caption d-none d-md-block">
+           
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="save00.jpg" class="d-block w-100" alt="gaming">
+                <div class="carousel-caption d-none d-md-block">
+                
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="save04.jpg" class="d-block w-100" alt="nature">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#readmore" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#readmore" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+    
+        <!--carousel-->
+<div class="col-3 ms-auto">
+    <img src="trees.gif" id="trees02">
+</div>
+        </div>
+    </div>
+</div>
+
+
+    
+<div class="container-fluid">
+    <div class="row bg-dark mt-5 pt-4" id="one" >
+        <div class="col">
+            <h3>How can modern technology help the environment?</h3>
+            <p>A recent report estimated that using the right tech could reduce global emissions by 17%, due to initiatives like using AI to improve efficiency of electric grids or satellites better monitoring environmental challenges.</p>
+            <p>Every day, artificial intelligence opens up amazing opportunities all over the world. Today, artificial intelligence technology is being implemented in companies to improve decision making, business processes and obtain valuable insights.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row  pt-4" id="one">
+        <div class="col">
+            <h3>Technology has a significant impact on the goals of sustainable development.</h2>
+            <p>Intelligence has great potential to save our planet: detecting energy emission reductions, optimizing energy production, monitoring deforestation, predicting extreme weather conditions, cleaning oceans and protecting inhabitants, and much more.</p>
+            <p>In this article, we will take a closer look at some AI solutions that save our planet. Also, you can find examples of AI startups, which effectively invested in AI technology for saving the planet.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row  pt-4" id="one">
+        <div class="col">
+            <h3>AI solutions that save our planet</h3>
+            <h3>Cleaning and protecting oceans</h3>
+            <p>71% of our planet is the ocean. But the earth is drowning in plastic pollution. According to the UN Environment Programme (UNEP), 300 million tonnes of plastic are produced every year, and not all is recycled. [1]</p>
+            <p>Moreover, a report by the Ellen MacArthur Foundation in partnership with the World Economic Forum predicts that by 2050, the oceans will contain at least 937 million tons of plastic and only 895 million tons of fish. [2]</p>
+            <p>And there are a lot of other such shocking facts.</p>
+            <p>So, the first implementation of AI technology is cleaning and protecting oceans from plastic. Have you ever wondered how AI can help to clean oceans?</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row  pt-4" id="one">
+        <div class="col">
+            <h3>Robotic system for sorting plastic</h3>
+            <p>In 2020 researchers from the University of Buffalo developed a robotic system based on machine learning that allows sorting plastics and discovering ecologically friendly solvents and new chemicals that decompose plastics into reusable components.</p>
+            <p>The robotic system includes sensor technology and a machine learning model. Sensor technology records the molecular signature of each piece of plastic, and machine learning identifies a specific piece of plastic based on molecular signatures.</p>
+            
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row  pt-4" id="one">
+        <div class="col" >
+            <h3>Automated robot for detecting plastic in rough waters</h3>
+            <p>The company Razer and startup CleanBot recently announced the development of a fully autonomous robot equipped with artificial intelligence and machine learning technologies that can detect marine plastic within two meters in rough waters. Powered by solar energy, the robot can collect up to 250 kg of plastic in just one cycle.</p>
+            <p>“ClearBot’s unique AI and advanced machine learning technology will enable and empower governments and organizations around the world to broaden their sustainability efforts.” – Patricia Liu, chief of staff at Razer</p>
+            
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row  pt-4" id="one">
+        <div class="col">
+            <h3>AI-powered robots improve the recycling process</h3>
+            <p>Recycling is a $200 billion industry, according to the Bureau of International Recycling. In most countries, recycling is considered a public matter and not a personal responsibility. Did you know that only 9% of all plastics are recycled? The rest usually end up in the oceans. Let’s take a closer look at some facts about recycling. [3]</p>
+            <div class="ul">
+            <li>On November 17th, 2020, at the America Recycles Summit — the Director of the EPA announced the goal to increase the national recycling rate to 50% by 2030.</li>
+            <li>It’s estimated that 94% of Americans support recycling.</li> 
+            <li>Germany has the highest MSW recycling rate in the world.</li> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row  pt-4" id="one">
+        <div class="col">
+            <h3>AMP Robotics</h3>
+            <p>The company produces AI robots that automate the identification, sorting, and processing of the countless items that are collected for recycling – at speeds twice as fast as humans and with 99% accuracy.</p>
+            <p>AMP Robotics operates in the United States, Canada, Japan, and Europe, integrating its technology with existing equipment to minimize the need for significant infrastructure changes.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row  pt-4" id="one">
+        <div class="col">
+            <h3>ZenRobotics</h3> 
+            <p>ZenRobotics Recycler is a waste sorting system that separates raw materials from waste. The system is equipped with infrared sensors, a 3D sensor system, an RGB camera, and a metal detector for waste identification.</p>
+            <p>The recycling system allows the recovery of valuable raw materials from construction waste. The artificial intelligence system is sold worldwide through a network of resellers in 49 countries.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row  pt-4" id="one">
+        <div class="col">
+            <h3>AI in reducing supermarket food waste</h3> 
+            <p>Food waste is another growing problem worldwide, and while waste occurs at all stages of the process (from production to consumption), consumers currently generate the most waste.</p>
+            <p>For example, in Germany, about twelve million tonnes of food are thrown away each year. And in the United States, nearly 40 million tons — 80 billion pounds — every year! [4]</p>
+            <p>Therefore, AI technology also plays a significant role in this global problem.</p>
+            <p>A report from the Ellen MacArthur Foundation and Google estimates that technologies employing AI to “design out food waste” could help generate up to $127 billion a year by 2030. [5]</p>
+            <p>So, how can AI technology be implemented in supermarkets for reducing food waste?</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row  pt-4" id="one">
+        <div class="col">
+            <h3>Winnow Vision</h3>
+            <p>AI platform, Winnow Vision identifies and weighs food waste thrown into AI-powered bins in commercial kitchens. This platform can correctly identify unnecessary products in over 80% of cases.</p>
+            <p>The startup also established cooperation with the Swedish company IKEA, which installed Winnow Vision in all 23 stores in Great Britain and Ireland.</p>            
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row  pt-4" id="one">
+        <div class="col">
+            <h3>What’s next?</h3>
+            <p>According to PWc research, it estimates that artificial intelligence for environmental applications could contribute $ 5.2 trillion to the global economy in 2030, which is 4.4% more than before. [6]</p>
+            <p>“AI can enable our future systems to be more productive for the economy and for nature” – Celine Herweijer, Global Innovation and Sustainability Leader, PwC UK.</p>
+            <p>In the near future, artificial intelligence can make energy markets much more efficient – by unlocking new supplies, reducing transaction costs, and making it easier for users to identify what they want to buy in the market. Moreover, it is predicted to see such AI solutions as:</p>
+            <div class="ul">
+            <li>AI-designed intelligent, connected, and livable cities</li>
+            <li>A transparent digital Earth</li>
+            <li>Reinforcement learning for Earth sciences breakthroughs and more</li>
+            </div>            
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row  pt-4" id="one">
+        <div class="col">
+            <h3> Takeaways</h3>
+            <div class="ul">
+            <li>Artificial Intelligence has great potential to save our planet: detecting energy emission reductions, optimizing energy production, monitoring deforestation, predicting extreme weather conditions, cleaning oceans and protecting inhabitants, and much more.</li>
+            <li>Examples of AI solutions: a robotic system for sorting plastic, AI-powered robots for improving the recycling process, AI-powered bins for reducing supermarket food waste, and more.</li>
+            <li>Artificial Intelligence plays a vital role in achieving not only environmental but all other sustainability goals.</li>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row  pt-4" id="one">
+        <div class="col">
+            <h4>References</h4>
+            <p>[1]Unep.org. Our planet is drowning in plastic pollution.</p>
+            <p>[2] Weforum.org. The New Plastics Economy Rethinking the future of plastics.</p>
+            <p>[3] Petpedia.co. 41 Eye-Opening Recycling Statistics for 2021.</p>
+            <p>[4] Rts.com. Food Waste in America in 2021.</p>
+            <p>[5] Ellenmacarthurfoundation.org. Let’s build a circular economy.</p>
+            <p>[6] Pwc.co.uk. How AI can enable a sustainable future.</p>
+            <p>[7] Weforum.org. 8 ways AI can help save the planet.</p>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<div class="container-fluid bg-dark">
+    <div class="footer">
+      <div class="row bg-dark ">
+        <p style="text-align: center;">©2023 Dru Repair Center. All rights reserved. The information contained herein is subject to change without notice.</p>
+      </div>
+      <div class="row footerdiv bg-dark mx-auto">
+            <div class="col bg-dark text-white py-auto m-0 border-top border-bottom ">
+              <div class="subscribe box">
+                <div class="content">
+                     <h5>Get in touch! </h5>
+                     <h6>Don't miss out updates.</h6>
+                     <b style="color: red; font-family: cursive;"><em>Subscribe to Newsletter!</em></b>
+                   <form>
+                     <div class="sub">
+                       <input type="email" class="form-control pb-2 mb-2" id="InputEmail1" placeholder="Enter email" required>
+                       <button type="submit" class="btn btn-danger py-2 mx-auto" data-bs-toggle="modal" data-bs-target="#submodal">Subscribe</button>
+                     </div>
+                   </form>
+                 <br/>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-sm-block bg-dark text-white pt-0 m-0 border-bottom border-top px-3 text-center">
+              <div class="content justify-content-center">
+              <strong><span>&emsp14;&emsp14; <h5>Map Location</h5><span></strong>
+               </div>
+               <div class="google-map mx-auto  "><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1542.5595092163487!2d120.91808899999998!3d14.357475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d4bd983f5b8b%3A0xc617211e3df086d8!2sMary%20Cris%20Complex%20Phase%204%2C%20General%20Trias%2C%20Cavite!5e1!3m2!1sen!2sph!4v1699523510365!5m2!1sen!2sph" width="200" height="180" style="border:0; text-align: center;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+               <br/>
+            </div>
+            <div class="col bg-dark text-white pt-3 m-0 border-bottom border-top ">
+              <div class="col-sm-12 text-center pt-1">
+                  <div class="content">
+                   <h5>Contact Us</h5>
+                    <i class="fa-solid fa-mobile-screen " style="color: white"></i></i><strong><span>&emsp14;&emsp14;Call Us:</h3></span></strong>
+                    <br/>
+                    <p>+639815716165</p>
+                    <i class="fa-regular fa-envelope" style="color:white"></i><strong><span>&emsp14;&emsp14;Email Us:</h3></span></strong><br/>
+                    <a href="">drurepaircenter@gmail.com</a>
+                    <br/>
+                   <div class="social">
+                    <a href="#"><span><i class="fa-brands fa-square-facebook" style="color:white"></i></span></a>
+                    <a href="#"><span><i class="fa-brands fa-square-instagram" style="color: white"></i></span></a>
+                    <a href="#"><span><i class="fa-brands fa-square-youtube" style="color:white"></i></span></a>
+                    <a href="#"><span><i class="fa-brands fa-viber" style="color:white"></i></span></a>
+                    </div><br/>
+                  </div>
+               </div>
+            </div>
+          <div class="col-8 bg-dark text-white mx-auto w-100 pt-2">
+            <p style="text-align: center;">©2023 Dru Repair Center. All rights reserved. The information contained herein is subject to change without notice.</p>
+          </div>
+      </div>
+    </div>       
+  </div>
+
+</body>
+</html>

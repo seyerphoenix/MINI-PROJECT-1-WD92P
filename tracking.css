@@ -1,0 +1,31 @@
+body{
+    background-image:url('blackbg.jpg');
+    background-attachment: fixed;
+    background-position: relative;
+    background-size: cover;
+    background-color: aqua;
+    }
+
+
+    .transbox {
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 70px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.8;
+        border-radius: 15px;
+        height:500px;
+        width: 600px;
+        padding: 30px;
+    }
+
+.box{
+    background-color: rgb(189, 104, 104);
+    border-radius: 15px;;
+}
+
+#logouw{
+height: 80px;
+width: 80px;
+}

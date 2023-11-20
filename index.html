@@ -6,117 +6,349 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="mp1style.css">
+    <script src="https://kit.fontawesome.com/90344a3882.js" crossorigin="anonymous"></script> <!--font awesome-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap'); 
+    </style> <!--Import Fonts-->
     <title>DRU ONLINE REPAIR CENTER</title>
 </head>
-<body>
 
+
+<body>
     <!--Upper Logos-->
-<div class="container-fluid">
-    <div class="row bg-secondary position-sticky top-0" >
+<div class="container-fluid ">
+  <div class="d-none d-lg-block ">
+    <div class="row bg-secondary position-sticky top-0" id="upper">
         <div class="col"></div>
-        <div class="col d-flex py-4"><img src="lenovo.jfif" id="lenovo"></div>
-        <div class="col py-3"><img src="amd.gif" alt="amd" id="amd"></div>
-        <div class="col py-4 px-1"><img src="asus.png" alt="asus" id="asus"></div>
-        <div class="col py-4 px-2"><img src="microsoft.gif" alt="microsoft" id="microsoft"></div>
-        <div class="col py-2 px-2"><img src="acer.png" alt="acer" id="acer"></div>
-        <div class="col py-3 px-3"><img src="nvidia.gif" alt="nvidia" id="nvidia"></div>
-        <div class="col py-4 px-1"><img src="giga.png" alt="giga" id="giga"></div>
-         <div class="col p-3"><img src="hp.gif" alt="hp" id="hp"></div>
-        <div class="col p-3"><img src="dell.png" alt="dell" id="dell"></div>
+        <div class="col d-flex py-4 "><img src="lenovo.jfif" id="lenovo"></div>
+        <div class="col py-3 "><img src="amd.gif" alt="amd" id="amd"></div>
+        <div class="col py-4 px-1 "><img src="asus.png" alt="asus" id="asus"></div>
+        <div class="col py-4 px-2 "><img src="microsoft.gif" alt="microsoft" id="microsoft"></div>
+        <div class="col py-2 px-2 "><img src="acer.png" alt="acer" id="acer"></div>
+        <div class="col py-3 px-3 "><img src="nvidia.gif" alt="nvidia" id="nvidia"></div>
+        <div class="col py-4 px-1 "><img src="giga.png" alt="giga" id="giga"></div>
+         <div class="col p-3 "><img src="hp.gif" alt="hp" id="hp"></div>
+        <div class="col p-3 "><img src="dell.png" alt="dell" id="dell"></div>
         <div class="col"></div>
-        <div class="quotes"><p>"Embrace the Future: Repair, Reboot, Rejoice."</p></div>
+        <div class="quotes "><p>"Embrace the Future: Repair, Reboot, Rejoice."</p></div>
     </div>
+  </div>
 </div>
     <!--End of upper Logo-->
 
 <!--Navigation Bar-->
-<nav class="navbar navbar-expand-lg navbar-light bg-primary text-white text-center ms-auto ">
-    <div class="container-fluid bg-primary text-center">
-        <a href="#" class="navbar-logo"><img src="logo.png" height="50px" width="60px"> DRU REPAIR CENTER </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav text-center ms-auto">
-                <a href="index.html" class="nav-item nav-link text-white border-2 border-end border-start px-3"><b>Home</b></a>
-                <div class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle text-white border-end px-3 border-2" data-bs-toggle="dropdown"><b>Schedule Repair</b></a>
-                    <div class="dropdown-menu bg-primary">
-                      <a href="warranty.html" class="dropdown-item text-white px-3">Under Warranty</a>
-                      <a href="bookuw.html" class="dropdown-item text-white px-3">Out of Warranty</a>
-                    </div>
-               </div>
-             
-                <a href="#" target="_blank"class="nav-item nav-link text-white border-end border-2"><b>Track Repair Status</b></a>
-                <a href="services.html" target="_blank"class="nav-item nav-link text-white border-end border-2"><b>Services</b></a>
-                <a href="#" class="nav-item nav-link text-white border-end px-3 border-2"><b>About Us</b></a>
-            </div>
-        </div>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary text-white text-center mx-auto ">
+  <div class="container-fluid bg-primary text-center">
+      <a href="#" class="navbar-logo"><img src="logo.png" height="50px" width="60px"></a>
+      <span><h2 id="logoname" class="my-auto pt-1">DRU REPAIR CENTER</h2></span>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav text-center ms-auto">
+              <a href="index.html" class="nav-item nav-link text-white border-2 border-end border-start px-3" id="home"><b>Home</b></a>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle text-white border-end px-3 border-2" data-bs-toggle="dropdown" id="repair"><b>Schedule Repair</b></a>
+                  <div class="dropdown-menu bg-primary">
+                    <a href="warranty.html" class="dropdown-item text-white px-3" id=warranty01>Under Warranty</a>
+                    <a href="bookuw.html" class="dropdown-item text-white px-3" id=warranty02>Out of Warranty</a>
+                  </div>
+             </div>
+              <a href="status.html" target="_blank"class="nav-item nav-link text-white border-end border-2" id="Track"><b>Track Repair Status</b></a>
+              <a href="services.html" target="_blank" class="nav-item nav-link text-white border-end border-2" id="services"><b>Services</b></a>
+              <a href="#headercard" class="nav-item nav-link text-white border-end px-3 border-2" id="about"><b>About Us</b></a>
+          </div>
+          <div class="navbar-nav ms-auto ">
+          </div>
+      </div>
+  </div>
 </nav>
+
 <!--End Navigation Bar-->
 
   <!--home photos-->
 
-  <div class="container-fluid m-0 p-0">
-    <div class="row bg-danger p-1 ">
-        <div class="col-6 bg-light pt-1 pb-1 position-relative inline-block">
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-sm-flex d-md-block d-lg-flex">
+        <div class="col bg-secondary pt-1 pb-1 px-1 position-relative inline-block">
          <!--CAROUSEL-->
-         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+         <div id="readmore" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#readmore" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#readmore" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
             <div class="carousel-inner">
+            
               <div class="carousel-item active">
-                <img src="futurepic.jpg" class="d-block w-100" alt="futurepic">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
                 <img src="nature.jpg" class="d-block w-100" alt="gaming">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                  <h2>TECHNOLOGY can help us SAVE the PLANET</h2>
+                  <a href="savetheplanet.html">Read More</a>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="gaming.jpg" class="d-block w-100" alt="nature">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h1>Start your Gaming Supremacy.</h1>
+                  <h5><i>Experience the New Perspective of Building Your Dream PC
+                    <br>  We are here to help you
+                  </i></h5>
+                  <a href="#contact">Contact Us Now!</a>
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#readmore" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#readmore" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+        </div>
           <!--CAROUSEL-->
-        </div>
-  
-          <div class="col-6 bg-info">
-                <div class="row bg-dark" >
-                        <div class="col bg-success px-1 pt-2 pb-1"><img src="community.jpg" alt="future" id="community"></div>
-                       <div class="col bg-warning p-1 pt-2"><iframe class="embed-responsive-item" src="boardvid.mp4" id="boardvid"></iframe></div>
-                </div>
-  
-                <div class="row bg-dark" >
-                      <div class="col bg-primary px-1 pb-1"><img src="community.jpg" alt="future" id="community"></div>
-                      <div class="col bg-secondary px-1 pb-1"><iframe class="embed-responsive-item" src="boardvid.mp4" id="boardvid"></iframe></div>
-                </div>
-        </div>
+        <div class="col">        
+            <div class="row ">
+              <div class="d-sm-block d-md-flex">
+                <div class="col bg-secondary px-1 py-1 "><img src="community01.jpg" height="300px" width="100%"></div>
+                <div class="col bg-secondary px-1 py-1 "><img src="customersatisfaction.jpg" height="300px" width="100%"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="d-sm-block d-md-flex">
+                <div class="col bg-secondary px-1 py-1 "><img src="future.jpg"  height="300px" width="100%"></div>
+                <div class="col bg-secondary px-1 py-1 "><img src="innovation.png"  height="300px" width="100%"></div>
+              </div>
+            </div>  
+       </div>
+  </div> 
+</div>
+
+<div class="row mt-4 pt-2">
+  <div class="col"></div>
+  <div class="col-2 border-2 border-bottom"></div>
+  <div class="col-2 border-2 border-bottom"></div>
+  <div class="col"></div>
+</div>
+
+<div class=" container-fluid pt-3 pb-0 bg-light"></div>
+<div class="row text-center "">
+  <h2> <u> <b>About Us</b></u></h2>
+</div>
+
+<div class="row pt-2">
+  <div class="col"></div>
+  <div class="col-2 border-2 border-bottom"></div>
+  <div class="col-2 border-2 border-bottom"></div>
+  <div class="col"></div>
+</div>
+
+<div class="container-fluid ">
+  <div class="col d-none d-sm-block">
+    <div class="row mt-3 " >
+      <img src="who05.jpg" alt="who" height="500px" width="600px" id="who">
     </div>
   </div>
-  
+</div>
+
+<!----------------------->
+
+
+<!----------------------->
+<div class="container-fluid">
+  <div class="row mt-5  offset-xl-2 offset-lg-0">
+     <div class="col-xl-4 col-lg-6 offset-lg-0 aboutus pt-4 text-center">
+         <h2 id="headercard">DRU REPAIR CENTER</h2>
+         <p>Our company provide a wide range of computer hardware and software services to homes and businesses. Our main focus is always on the client’s business model and plans. We believe that the more we know about clients’ preferences or how they company works, the more precise our solution will be.</p>
+         <br><p>Our Engineers and Technicians undergo Technical Diagnostic Training of new products to keep abreast of industry developments and to stay up with the rapid changes in technology in order to troubleshoot issues with the most recent tools. </p>
+     </div>
+     <div class= "col-xl-4 col-lg-6 offset-lg-0 d-none d-sm-block pt-2">
+      <div class="card mx-auto col-md-12">
+         <div class="card-body">
+            <img src="company.jpg" alt="company" id="company">
+         </div>
+         <div class="card-footer"><h2>Our Company</h2></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row pt-5">
+  <div class="col"></div>
+  <div class="col-4 border-2 border-bottom"></div>
+  <div class="col-4 border-2 border-bottom"></div>
+  <div class="col"></div>
+</div>
+
+<!----------------------->
+<div class="container-fluid">
+  <div class="row mt-5  offset-xl-2 offset-lg-0 ">
+     <div class="col-xl-4 col-lg-6 offset-lg-0 aboutus text-center d-none d-sm-block">
+      <div class="card mx-auto col-md-12">
+        <div class="card-body">
+           <img src="mission.jpeg" alt="company" id="company">
+        </div>
+        <div class="card-footer"><h3>Provide Quality Services</h3></div>
+     </div>
+     </div>
+     <div class= "col-xl-4 col-lg-6 offset-lg-0 text-center pt-4">
+      <h2 id="headercard">MISSION</h2>
+      <p>Cumputer Services and other IT related services focusing on becoming a highly credible and excellent in providing quality services, 
+        operate in a responsible manner being up-to-date with the upgrading Information Technology for a highly reliable and consistently satisfying customer experience.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row pt-5">
+  <div class="col"></div>
+  <div class="col-4 border-2 border-bottom"></div>
+  <div class="col-4 border-2 border-bottom"></div>
+  <div class="col"></div>
+</div>
+
+
+<!----------------------->
+<div class="container-fluid">
+  <div class="row mt-5  offset-xl-2 offset-lg-0">
+     <div class="col-xl-4 col-lg-6 offset-lg-0 aboutus pt-4 text-center">
+         <h2 id="headercard">VISION</h2>
+      <p>Be a trusted Service Provider for information technology services and solutions of the highest quality
+        Continue building on our reputation of excellence, value and integrity and promotes innovative thinking, growth and opportunity for our people.</p>
+     </div>
+     <div class= "col-xl-4 col-lg-6 offset-lg-0 d-none d-sm-block pt-2">
+      <div class="card mx-auto col-md-12">
+         <div class="card-body">
+            <img src="vission.jpg" alt="company" id="company">
+         </div>
+         <div class="card-footer"><h3>Be a Trusted Service Provider</h3></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row pt-5">
+  <div class="col"></div>
+  <div class="col-4 border-2 border-bottom"></div>
+  <div class="col-4 border-2 border-bottom"></div>
+  <div class="col"></div>
+</div>
+
+<!------------------------>
+<div class="container-fluid">
+  <div class="row mt-5  offset-xl-2 offset-lg-0 ">
+     <div class="col-xl-4 col-lg-6 offset-lg-0 aboutus text-center d-none d-sm-block">
+      <div class="card mx-auto col-md-12">
+        <div class="card-body">
+           <img src="values.jpg" alt="company" id="company">
+        </div>
+        <div class="card-footer"><h2>Core Values</h2></div>
+     </div>
+     </div>
+     <div class= "col-xl-4 col-lg-6 offset-lg-0 pt-4 px-4 text-md-center text-sm-center text-center">
+      <h2 id="headercard">Company Core Values</h2>
+      <div class="ul text-xl-left text-lg-left ">
+        <li>Honesty and integrity</li>
+        <li>Workforce Commitment</li>
+        <li>Customer Success</li>
+        <li>Accessibility</li>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row pt-5">
+  <div class="col"></div>
+  <div class="col-4 border-2 border-bottom"></div>
+  <div class="col-4 border-2 border-bottom"></div>
+  <div class="col"></div>
+</div>
+
+<!----------------------->
+
+
+<!--Modal-->
+<div class="modal" id="submodal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="color:red">Congratulations!</h3>
+      </div>
+      <div class="modal-body">
+        <h5>You are now subscribe to Newsletter.</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+ </div>
+<!----->
+
+<!--Back to top-->
+  <div class="back text-center">
+    <a href="#upper"><img src="top.png" alt="top" width="200px" height="100px"></a>.
+  </div>
+
+
+<!--footer-->
+<div class="container-fluid bg-dark">
+  <div class="footer">
+    <div class="row bg-dark ">
+      <p style="text-align: center;">©2023 Dru Repair Center. All rights reserved. The information contained herein is subject to change without notice.</p>
+    </div>
+    <div class="row footerdiv bg-dark mx-auto">
+          <div class="col bg-dark text-white py-auto m-0 border-top border-bottom ">
+            <div class="subscribe box">
+              <div class="content">
+                   <h5>Get in touch! </h5>
+                   <h6>Don't miss out updates.</h6>
+                   <b style="color: red; font-family: cursive;"><em>Subscribe to Newsletter!</em></b>
+                 <form>
+                   <div class="sub">
+                     <input type="email" class="form-control pb-2 mb-2" id="InputEmail1" placeholder="Enter email" required>
+                     <button type="submit" class="btn btn-danger py-2 mx-auto" data-bs-toggle="modal" data-bs-target="#submodal">Subscribe</button>
+                   </div>
+                 </form>
+               <br/>
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-sm-block bg-dark text-white pt-0 m-0 border-bottom border-top px-3 text-center">
+            <div class="content justify-content-center">
+            <strong><span>&emsp14;&emsp14; <h5>Map Location</h5><span></strong>
+             </div>
+             <div class="google-map mx-auto  "><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1542.5595092163487!2d120.91808899999998!3d14.357475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d4bd983f5b8b%3A0xc617211e3df086d8!2sMary%20Cris%20Complex%20Phase%204%2C%20General%20Trias%2C%20Cavite!5e1!3m2!1sen!2sph!4v1699523510365!5m2!1sen!2sph" width="200" height="180" style="border:0; text-align: center;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+             <br/>
+          </div>
+          <div class="col bg-dark text-white pt-3 m-0 border-bottom border-top " id="contact">
+            <div class="col-sm-12 text-center pt-1">
+                <div class="content">
+                 <h5>Contact Us</h5>
+                  <i class="fa-solid fa-mobile-screen " style="color: white"></i></i><strong><span>&emsp14;&emsp14;Call Us:</h3></span></strong>
+                  <br/>
+                  <p>+639815716165</p>
+                  <i class="fa-regular fa-envelope" style="color:white"></i><strong><span>&emsp14;&emsp14;Email Us:</h3></span></strong><br/>
+                  <a href="">drurepaircenter@gmail.com</a>
+                  <br/>
+                 <div class="social">
+                  <a href="#"><span><i class="fa-brands fa-square-facebook" style="color:white"></i></span></a>
+                  <a href="#"><span><i class="fa-brands fa-square-instagram" style="color: white"></i></span></a>
+                  <a href="#"><span><i class="fa-brands fa-square-youtube" style="color:white"></i></span></a>
+                  <a href="#"><span><i class="fa-brands fa-viber" style="color:white"></i></span></a>
+                  </div><br/>
+                </div>
+             </div>
+          </div>
+        <div class="col-8 bg-dark text-white mx-auto w-100 pt-2">
+          <p style="text-align: center;">©2023 Dru Repair Center. All rights reserved. The information contained herein is subject to change without notice.</p>
+        </div>
+    </div>
+  </div>       
+</div>
+
 
 </body>
 </html>
